@@ -30,6 +30,31 @@ def puzzle_a():
     print('\nPuzzle A')
     print('~~~~~~~~~')
 
+    num1_input = input("Please enter a WHOLE number: ")
+    num1 = int(num1_input)
+
+    num2 = int(input("Please enter another WHOLE number: "))
+
+    # Add
+    add_result = num1 + num2
+    print(f'{num1} + {num2} = {add_result}')
+
+    # Subtract
+    subtract_result = num1 - num2
+    print(f'{num1} - {num2} = {subtract_result}')
+
+    # Multiply
+    multiply_result = num1 * num2
+    print(f'{num1} * {num2} = {multiply_result}')
+
+    # Divide
+    divide_result = num1 / num2
+    print(f"{num1} / {num2} = {divide_result}")
+
+    divide_quotient = num1 // num2
+    remainder = num1 % num2
+    print(f"{num1} // {num2} = {divide_quotient} remainder {remainder}")
+
 
 def example_b():
     print('\nExample B')
@@ -60,6 +85,16 @@ def puzzle_b():
     print('\nPuzzle B')
     print('~~~~~~~~~')
 
+    money_input = input("How much would you like to donate to Sex Addicts Anonymous?:")
+
+    money = Decimal(money_input)
+    rounded_money = round(money, 2)
+
+    matched_total = rounded_money * 2
+
+    print(f"You have donated ${rounded_money} to Sex Addicts Anonymous, and Elon Musk has matched the donation!")
+    print(f"Total Donated: ${matched_total}")
+
 
 def example_c():
     print('\nExample C')
@@ -84,16 +119,29 @@ def puzzle_c():
     print('\nPuzzle C')
     print('~~~~~~~~~~~')
 
+    print("Tax Department")
+    salary_input = input("You must enter your yearly salary, or you will be arrested: ")
+
+    salary = Decimal(salary_input)
+    rounded_salary = round(salary, 0) # Tax dept usually just goes by whole numbers
+
+    tax = random.randint(30, 100)
+
+    tax_to_pay = rounded_salary * tax / 100
+
+    print(f"You need to pay {tax}% tax, that's ${tax_to_pay} you owe us or else")
+
+
 
 if __name__ == '__main__':
 
     # Run the puzzles
 
-    example_a()
-    # puzzle_a()
+    # example_a()
+    puzzle_a()
 
-    example_b()
-    # puzzle_b()
+    # example_b()
+    puzzle_b()
 
-    example_c()
-    # puzzle_c()
+    # example_c()
+    puzzle_c()
