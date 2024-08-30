@@ -2,6 +2,9 @@
 ### Lets do some console app puzzles. Most beginners start off writing console apps, so it is a good way to make sure we cover the basics.
 
 ### View the YouTube Video: 
+[https://youtu.be/-hT2L_QiktA](https://youtu.be/-hT2L_QiktA)
+
+Our Website: [https://www.pythonpuzzles.com/](https://www.pythonpuzzles.com/)
 
 
 ## Puzzles
